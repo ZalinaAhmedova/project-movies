@@ -5,7 +5,7 @@ import Modal from "./Modal";
 function PlayBtn({ movie }) {
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
-    setModal(!modal)
+    setModal(!modal);
   };
 
   return (

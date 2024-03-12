@@ -35,16 +35,16 @@ function Banner() {
       {movies &&
         movies.length>0 &&
         movies.map(movie => (
-          <div className="movie">
+          <div className="movie" key={movie._id}>
             <img src={movie.bgImg} alt="Background Image" className={`bgImg ${movie.active ? 'active' : undefined}`}/>
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6 col-md-12">
-                  <MovieContent movie={movie} key={movie._id}/>
+                  <MovieContent movie={movie}/>
                 </div>
                 <div className="col-lg-6 col-md-12">
-                  <MovieDate movie={movie} key={movie._id}/>
-                  <PlayBtn movie={movie} key={movie._id}/>
+                  <MovieDate movie={movie}/>
+                  <PlayBtn movie={movie}/>
                 </div>
               </div>
             </div>

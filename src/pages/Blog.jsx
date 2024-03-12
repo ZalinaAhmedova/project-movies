@@ -17,7 +17,7 @@ function Blog() {
       }, []);
     
   return (
-    <section id="blog">
+    <section id="blogs">
         <div className="container-fluid">
             <div className="row">
                 <h4 className="section-title">Our blog</h4>

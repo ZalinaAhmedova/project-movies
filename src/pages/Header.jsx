@@ -12,8 +12,8 @@ function Header({ scroll }) {
       nav.active = false;
       if (nav._id === id) {
         nav.active = true;
-        return nav;
       }
+      return nav;
     });
     setNavList(newNavList);
   };
